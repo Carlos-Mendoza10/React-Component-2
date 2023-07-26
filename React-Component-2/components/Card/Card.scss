@@ -1,0 +1,94 @@
+body{
+  background-color: black;
+}
+.calificacion {
+  &__buttom {
+    background-color: hsl(213, 19%, 18%);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: hsl(216, 12%, 54%);
+
+    &:hover{
+      background-color: hsl(25, 97%, 53%);
+      color: white;
+      border-color: white;
+    }
+
+    &:focus{
+      background-color: hsl(25, 97%, 53%);
+      color: white;
+      border-color: white;
+    }
+  }
+
+  &__buttoms {
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.card {
+  background: linear-gradient(to bottom, hsl(213, 19%, 18%), #20272f, #1c2027, #171a1f, hsl(216, 12%, 8%));;
+  width: 375px;
+  padding: 20px;
+  border-radius: 20px;
+
+  &__calificacion{
+    overflow: hidden;
+    opacity: 0;
+    height: 0;
+  }
+  &__calificacion-show{
+    height: 100%;
+  }
+
+  &__text{
+    display: block;
+    text-align: left;
+    p {
+      color: hsl(217, 12%, 63%);
+    }
+  
+    h1 {
+      color: white;
+      font-size: 20px;
+      margin-block-start: 0;
+      margin-block-end: 0;
+    }
+  }
+  
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(213, 19%, 18%);
+  margin-bottom:32px;
+}
+
+.submit {
+  &__bottom-send {
+
+    background-color:  hsl(25, 97%, 53%);
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 25px;
+    transition: background-color 0.7s ease-out 100ms;
+    text-transform: uppercase;
+  
+    &:hover {
+      background-color: white;
+      color: hsl(25, 97%, 53%) ;
+    }
+  }
+}
